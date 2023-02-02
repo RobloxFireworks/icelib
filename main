@@ -1332,4 +1332,4 @@ global.ui.combat.tab = combat
 global.ui.info.tab = info
 --]]
 
-return icetray
+
