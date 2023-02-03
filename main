@@ -1291,7 +1291,6 @@ function icetray.CreateWindow(libName, logoId)
         return sectionHandling
     end
     return TabHandling
-    return icetray
 end
 
 while true do
