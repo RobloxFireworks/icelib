@@ -1,5 +1,3 @@
-local icetray = {}
-
 --[[
 
     window: icetray.CreateWindow
@@ -12,7 +10,7 @@ local icetray = {}
     slider: ItemHandling:Slider
     label: ItemHandling:Label
     credit: ItemHandling:Credit
-    dropdown: ItemHandling:DropDown
+    dropdown: temHandling:DropDown
 
 ]]--
 
@@ -29,7 +27,7 @@ env.tweenservice = game:GetService("TweenService")
 env.teams = game:GetService("Teams")
 env.global = global
 
-
+local icetray = {}
 
 function icetray.CreateWindow(libName, logoId)
     local t = game:GetService("CoreGui")
@@ -1302,35 +1300,23 @@ while true do
     task.wait()
 end
 
+
 --[[
-local player = players.LocalPlayer
-local userId = player.UserId
-local thumbType = Enum.ThumbnailType.HeadShot
-local thumbSize = Enum.ThumbnailSize.Size420x420
-local content, isReady = players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-local window = icetray.CreateWindow("ice tray v3", content)
-local plr = window:Tab("Player")
-local vehicle = window:Tab("Vehicle")
-local misc = window:Tab("Misc")
-local combat = window:Tab("Combat")
-local visuals = window:Tab("Visuals")
-local info = window:Tab("Info")
-global.ui = {}
-global.ui.window = {}
-global.ui.player = {}
-global.ui.vehicle = {}
-global.ui.misc = {}
-global.ui.combat = {}
-global.ui.visuals = {}
-global.ui.info = {}
-global.ui.window.tab = window
-global.ui.player.tab = plr
-global.ui.visuals.tab = visuals
-global.ui.misc.tab = misc
-global.ui.vehicle.tab = vehicle
-global.ui.combat.tab = combat
-global.ui.info.tab = info
---]]
+
+    window: icetray.CreateWindow
+    tab: TabHandling:Tab
+    section: sectionHandling:Section
+    button: ItemHandling:Button
+    toggle: ItemHandling:Toggle
+    KeyBind: ItemHandling:KeyBind
+    textbox: ItemHandling:TextBox
+    slider: ItemHandling:Slider
+    label: ItemHandling:Label
+    credit: ItemHandling:Credit
+    dropdown: temHandling:DropDown
+
+]]--
 
 
-return icetray
+
+
