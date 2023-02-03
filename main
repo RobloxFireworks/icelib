@@ -1,4 +1,4 @@
--- I stole this lol
+local icetray = {}
 
 --[[
 
@@ -29,7 +29,7 @@ env.tweenservice = game:GetService("TweenService")
 env.teams = game:GetService("Teams")
 env.global = global
 
-local icetray = {}
+
 
 function icetray.CreateWindow(libName, logoId)
     local t = game:GetService("CoreGui")
