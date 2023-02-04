@@ -1292,7 +1292,6 @@ function icetray.CreateWindow(libName, logoId)
     end
     return TabHandling
 end
-return icetray
 
 while true do
     if game:IsLoaded() then
