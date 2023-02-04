@@ -1292,6 +1292,7 @@ function icetray.CreateWindow(libName, logoId)
     end
     return TabHandling
 end
+return icetray
 
 while true do
     if game:IsLoaded() then
@@ -1317,8 +1318,9 @@ end
 
 ]]--
 
-
+local window = icetray:CreateWindow("22", 5536491791)
 
 
 
 return icetray
+
